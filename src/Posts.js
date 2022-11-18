@@ -1,78 +1,40 @@
+import Post from "./Post"
+
+const post  = [
+    {
+    photoUser:"assets/img/meowed.svg",
+   name:"meowed",
+   conteudo:"assets/img/gato-telefone.svg",
+   curtidaUser:"respondea" ,
+   curtidaCont:15},
+  {
+    photoUser:"assets/img/barked.svg",
+   name:"barked",
+   conteudo:"assets/img/dog.svg",
+    curtidaUser:"adorable_animals" ,
+    curtidaCont:123},
+    {
+      photoUser:"assets/img/meowed.svg",
+     name:"meowed",
+     conteudo:"assets/img/gato-telefone.svg",
+     curtidaUser:"respondea" ,
+     curtidaCont:15}]
+
+
 export default function Posts(){
-
-return(
+  const newPost = post.map((p)=> < Post photoUser = {p.photoUser} name = {p.name} conteudo ={p.conteudo} curtidaUser ={p.curtidaUser} curtidaCont ={p.curtidaCont} />) 
+return (
+  <>
 <div class="posts">
-<div class="post">
-  <div class="topo">
-    <div class="usuario">
-      <img src="assets/img/meowed.svg" alt="a" />
-      meowed
-    </div>
-    <div class="acoes">
-      <ion-icon name="ellipsis-horizontal"></ion-icon>
-    </div>
-  </div>
-
-  <div class="conteudo">
-    <img src="assets/img/gato-telefone.svg" alt="a" />
-  </div>
-
-  <div class="fundo">
-    <div class="acoes">
-      <div>
-        <ion-icon name="heart-outline"></ion-icon>
-        <ion-icon name="chatbubble-outline"></ion-icon>
-        <ion-icon name="paper-plane-outline"></ion-icon>
-      </div>
-      <div>
-        <ion-icon name="bookmark-outline"></ion-icon>
-      </div>
-    </div>
- 
-    <div class="curtidas">
-      <img src="assets/img/respondeai.svg" alt="a" />
-      <div class="texto">
-        Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong>
-      </div>
-    </div>
-  </div>
+  {newPost} 
 </div>
-
-<div class="post">
-  <div class="topo">
-    <div class="usuario">
-      <img src="assets/img/barked.svg" alt="a" />
-      barked
-    </div>
-    <div class="acoes">
-      <ion-icon name="ellipsis-horizontal"></ion-icon>
-    </div>
-  </div>
-
-  <div class="conteudo">
-      <img src="assets/img/dog.svg" alt="a" />
-  </div>
-
-  <div class="fundo">
-    <div class="acoes">
-      <div>
-        <ion-icon name="heart-outline"></ion-icon>
-        <ion-icon name="chatbubble-outline"></ion-icon>
-        <ion-icon name="paper-plane-outline"></ion-icon>
-      </div>
-      <div>
-        <ion-icon name="bookmark-outline"></ion-icon>
-      </div>
-    </div>
-
-    <div class="curtidas">
-      <img src="assets/img/adorable_animals.svg" alt="a" />
-      <div class="texto">
-        Curtido por <strong>adorable_animals</strong> e <strong>outras 99.159 pessoas</strong>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+ </>
 )
 }
+
+    
+
+
+
+
+

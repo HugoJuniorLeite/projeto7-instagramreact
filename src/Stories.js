@@ -1,3 +1,10 @@
+
+const storie = [{image:"assets/img/9gag.svg"},{urser:"9gag"},
+{image:"assets/img/meowed.svg"},{urser:"meowed"},
+
+
+]
+
 export default function Stories(){
 
 return(
@@ -5,10 +12,10 @@ return(
 <div class="stories">
         <div class="story">
           <div class="imagem">
-            <img src="assets/img/9gag.svg" alt="a" />
+            <img src={props.image} alt="a" />
           </div>
           <div class="usuario">
-            9gag
+            {props.urser}
           </div>
         </div>
 
