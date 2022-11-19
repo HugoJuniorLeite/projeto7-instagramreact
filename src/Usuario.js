@@ -1,9 +1,9 @@
 export default function usuario(){
 
 return(
-<div class="usuario">
+<div className="usuario">
 <img src="assets/img/catanacomics.svg" alt="a" />
-<div class="texto">
+<div className="texto">
   <strong>catanacomics</strong>
   <span>
     Catana

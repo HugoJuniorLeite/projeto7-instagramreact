@@ -1,90 +1,28 @@
+import Storie from "./Storie"
 
-const storie = [{image:"assets/img/9gag.svg"},{urser:"9gag"},
-{image:"assets/img/meowed.svg"},{urser:"meowed"},
-
-
+const storie = [
+{image:"assets/img/9gag.svg", user:"9gag"},
+{image:"assets/img/meowed.svg",user:"meowed"},
+{image:"assets/img/barked.svg",user:"barked"},
+{image:"assets/img/nathanwpylestrangeplanet.svg",user:"nathanwpylestrangeplanet"},
+{image:"assets/img/wawawicomics.svg",user:"wawawicomics"},
+{image:"assets/img/respondeai.svg",user:"respondeai"},
+{image:"assets/img/filomoderna.svg",user:"filomoderna"},
+{image:"assets/img/memeriagourmet.svg",user:"memeriagourmet"}
 ]
 
 export default function Stories(){
 
+const newStorie = storie.map((s) => <Storie image={s.image} user={s.user} />)
+console.log(newStorie)
 return(
-
+<>
 <div class="stories">
-        <div class="story">
-          <div class="imagem">
-            <img src={props.image} alt="a" />
-          </div>
-          <div class="usuario">
-            {props.urser}
-          </div>
-        </div>
-
-        <div class="story">
-          <div class="imagem">
-            <img src="assets/img/meowed.svg" alt="a" />
-          </div>
-          <div class="usuario">
-            meowed
-          </div>
-        </div>
-
-        <div class="story">
-          <div class="imagem">
-            <img src="assets/img/barked.svg" alt="a" />
-          </div>
-          <div class="usuario">
-            barked
-          </div>
-        </div>
-
-        <div class="story">
-          <div class="imagem">
-            <img src="assets/img/nathanwpylestrangeplanet.svg" alt="a" />
-          </div>
-          <div class="usuario">
-            nathanwpylestrangeplanet
-          </div>
-        </div>
-
-        <div class="story">
-          <div class="imagem">
-            <img src="assets/img/wawawicomics.svg" alt="a" />
-          </div>
-          <div class="usuario">
-            wawawicomics
-          </div>
-        </div>
-
-        <div class="story">
-          <div class="imagem">
-            <img src="assets/img/respondeai.svg" alt="a" />
-          </div>
-          <div class="usuario">
-            respondeai
-          </div>
-        </div>
-
-        <div class="story">
-          <div class="imagem">
-            <img src="assets/img/filomoderna.svg" alt="a" />
-          </div>
-          <div class="usuario">
-            filomoderna
-          </div>
-        </div>
-
-        <div class="story">
-          <div class="imagem">
-            <img src="assets/img/memeriagourmet.svg" alt="a" />
-          </div>
-          <div class="usuario">
-            memeriagourmet
-          </div>
-        </div>
-
-        <div class="setinha">
-          <ion-icon name="chevron-forward-circle"></ion-icon>
-        </div>
-      </div>
+  {newStorie}
+  <div class="setinha">
+  <ion-icon name="chevron-forward-circle"></ion-icon>
+</div>
+</div>
+</>
 )
 }

@@ -1,71 +1,23 @@
+import { Sugestao } from "./Sugestao"
+
+const sugestao =[
+  {image: "assets/img/bad.vibes.memes.svg", user:"bad.vibes.memes"},
+{image: "assets/img/chibirdart.svg", user:"chibirdart"},
+  {image: "assets/img/razoesparaacreditar.svg", user:"razoesparaacreditar"},
+    {image: "assets/img/adorable_animals.svg", user:"adorable_animals"},
+      {image: "assets/img/smallcutecats.svg", user:"smallcutecats"}
+]
+
+
 export default function Sugestoes(){
+const newSugestao =sugestao.map((e)=> <Sugestao image={e.image} user={e.user}/>)
 
 return(
-<div class="sugestoes">
-<div class="titulo">
+<div className="sugestoes">
+<div className="titulo">
   Sugestões para você
   <div>Ver tudo</div>
 </div>
-
-<div class="sugestao">
-  <div class="usuario">
-    <img src="assets/img/bad.vibes.memes.svg" alt="a" />
-    <div class="texto">
-      <div class="nome">bad.vibes.memes</div>
-      <div class="razao">Segue você</div>
-    </div>
-  </div>
-
-  <div class="seguir">Seguir</div>
-</div>
-
-<div class="sugestao">
-  <div class="usuario">
-    <img src="assets/img/chibirdart.svg" alt="a" />
-    <div class="texto">
-      <div class="nome">chibirdart</div>
-      <div class="razao">Segue você</div>
-    </div>
-  </div>
-
-  <div class="seguir">Seguir</div>
-</div>
-
-<div class="sugestao">
-  <div class="usuario">
-    <img src="assets/img/razoesparaacreditar.svg" alt="a" />
-    <div class="texto">
-      <div class="nome">razoesparaacreditar</div>
-      <div class="razao">Novo no Instagram</div>
-    </div>
-  </div>
-
-  <div class="seguir">Seguir</div>
-</div>
-
-<div class="sugestao">
-  <div class="usuario">
-    <img src="assets/img/adorable_animals.svg" alt="a"/>
-    <div class="texto">
-      <div class="nome">adorable_animals</div>
-      <div class="razao">Segue você</div>
-    </div>
-  </div>
-
-  <div class="seguir">Seguir</div>
-</div>
-
-<div class="sugestao">
-  <div class="usuario">
-    <img src="assets/img/smallcutecats.svg" alt="a" />
-    <div class="texto">
-      <div class="nome">smallcutecats</div>
-      <div class="razao">Segue você</div>
-    </div>
-  </div>
-
-  <div class="seguir">Seguir</div>
-</div>
-</div>
+{newSugestao}</div>
 )
 }
