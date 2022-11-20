@@ -19,7 +19,7 @@ const [imgage, setImage] =useState ('assets/img/catanacomics.svg')
       <div className="texto">
         <strong>catanacomics</strong>
         <span data-test="name">
-          {nome}
+          { nome==="" ? {useState}: {nome}}
           <ion-icon data-test="edit-name" onClick={atualizarNome} name="pencil"></ion-icon>
         </span>
       </div>
