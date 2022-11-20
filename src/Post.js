@@ -19,7 +19,7 @@ like==="heart-outline" ? setContNow(props.curtidaCont+1): setContNow(props.curti
 }
   return (
     <>
-      <div className="post">
+      <div data-test="post"className="post">
         <div className="topo">
           <div className="usuario">
             <img src={props.photoUser} alt="a" />
@@ -31,19 +31,19 @@ like==="heart-outline" ? setContNow(props.curtidaCont+1): setContNow(props.curti
         </div>
 
         <div className="conteudo">
-          <img src={props.conteudo} alt="a" />
+          <img data-test="post-image"src={props.conteudo} alt="a" />
         </div>
 
         <div className="fundo">
           <div className="acoes">
             <div>
-              <ion-icon onClick ={actionLike} name={like} class={like}></ion-icon>
+              <ion-icon data-test="like-post" onClick ={actionLike} name={like} class={like}></ion-icon>
               <ion-icon name="chatbubble-outline"></ion-icon>
               <ion-icon name="paper-plane-outline"></ion-icon>
             </div>
             <div>
               
-              <ion-icon onClick={savePost} name= {save}></ion-icon>
+              <ion-icon data-test ="save-post"onClick={savePost} name= {save}></ion-icon>
             </div>
           </div>
 
@@ -51,7 +51,7 @@ like==="heart-outline" ? setContNow(props.curtidaCont+1): setContNow(props.curti
             <img src="assets/img/respondeai.svg" alt="a" />
             <div className="texto">
               Curtido por <strong>{props.curtidaUser}</strong> e{" "}
-              <strong>outras {contNow} pessoas</strong>
+              <strong data-test="likes-number">outras {contNow} pessoas</strong>
             </div>
           </div>
         </div>

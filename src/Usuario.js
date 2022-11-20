@@ -14,13 +14,13 @@ const [imgage, setImage] =useState ('assets/img/catanacomics.svg')
   }
 
   return (
-    <div className="usuario">
-      <img onClick={atualizarImage} src={imgage} alt="a" />
+    <div data-test="user" className="usuario">
+      <img data-test="profile-image"onClick={atualizarImage} src={imgage} alt="a" />
       <div className="texto">
         <strong>catanacomics</strong>
-        <span>
+        <span data-test="name">
           {nome}
-          <ion-icon onClick={atualizarNome} name="pencil"></ion-icon>
+          <ion-icon data-test="edit-name" onClick={atualizarNome} name="pencil"></ion-icon>
         </span>
       </div>
     </div>
