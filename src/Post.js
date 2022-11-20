@@ -22,6 +22,8 @@ like==="heart-outline" ? setContNow(props.curtidaCont+1): setContNow(props.curti
 function likeImage(){
 
   setLike("heart")
+  like==="heart-outline" ? setContNow(props.curtidaCont+1): setContNow(props.curtidaCont)
+
 }
   return (
     <>
