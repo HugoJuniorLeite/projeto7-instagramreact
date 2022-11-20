@@ -6,6 +6,7 @@ const [save, setSave] = useState("bookmark-outline")
 const [like, setLike] = useState("heart-outline")
 const [contNow, setContNow] =useState(props.curtidaCont)
 
+
 function savePost(){
 
 save === "bookmark-outline" ?  setSave("bookmark") : setSave("bookmark-outline")
@@ -16,6 +17,11 @@ function actionLike(){
 like==="heart-outline" ? setLike("heart") : setLike("heart-outline") 
 like==="heart-outline" ? setContNow(props.curtidaCont+1): setContNow(props.curtidaCont)
 
+}
+
+function likeImage(){
+
+  setLike("heart")
 }
   return (
     <>
@@ -31,7 +37,7 @@ like==="heart-outline" ? setContNow(props.curtidaCont+1): setContNow(props.curti
         </div>
 
         <div className="conteudo">
-          <img data-test="post-image"src={props.conteudo} alt="a" />
+          <img data-test="post-image" onDoubleClick={likeImage} src={props.conteudo} alt="a" />
         </div>
 
         <div className="fundo">
