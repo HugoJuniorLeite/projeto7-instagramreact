@@ -1,17 +1,12 @@
-export default function Storie(props){
-    return(
+export default function Storie(props) {
+  return (
     <>
-      <div class="story">
-      <div class="imagem">
-        <img src={props.image} alt="a" />
+      <div className="story">
+        <div className="imagem">
+          <img src={props.image} alt="a" />
+        </div>
+        <div className="usuario">{props.urser}</div>
       </div>
-      <div class="usuario">
-        {props.urser}
-      </div>
-    </div>
     </>
-    )
-    }
-    
-    
-    
+  );
+}

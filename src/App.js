@@ -1,13 +1,13 @@
-import NavBar from './NavBar'
-import Corpo from './Corpo'
-import Footer from './Footer'
+import NavBar from "./NavBar";
+import Corpo from "./Corpo";
+import Footer from "./Footer";
 
-export default function App(){
-return (
+export default function App() {
+  return (
     <>
-    <NavBar/>
-    <Corpo/>
-    <Footer/>
-</>
-)   
+      <NavBar />
+      <Corpo />
+      <Footer />
+    </>
+  );
 }
