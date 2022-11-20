@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.heart{
+  color:red;
+}
+
 body {
   background-color: #FAFAFA;
   margin: 54px 0 0;
@@ -309,6 +313,8 @@ body {
 .logo-mobile, .instagram-mobile {
   display: none !important;
 }
+
+
 
 @media (max-width: 935px) {
   .sidebar {
